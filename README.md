@@ -4,10 +4,10 @@ This repository is to showcase the Movie Rental Web service that allows users to
 
 The video rental store database has the entities characteristics:
 
-RentalPlan(pid INT, pname VARCHAR(50), monthly_fee FLOAT, max_movies INT)\
-Customer(cid INT, pidFK-RentalPlan INT, username VARCHAR(50), password VARCHAR(50))\
-Rental(cidFK-Customer INT, midFK-Movie INT, date_and_time DATETIME, status VARCHAR(6))\
-Movie(mid INT, mname VARCHAR(50), year INT)
+    RentalPlan(pid INT, pname VARCHAR(50), monthly_fee FLOAT, max_movies INT)
+    Customer(cid INT, pidFK-RentalPlan INT, username VARCHAR(50), password VARCHAR(50))
+    Rental(cidFK-Customer INT, midFK-Movie INT, date_and_time DATETIME, status VARCHAR(6))
+    Movie(mid INT, mname VARCHAR(50), year INT)
 
 
 RentalPlan: Each plan has a plan id, a name ("Basic", "Rental Plus", "Super Access", or "Ultra Access"), the maximum number of rentals allowed ("Basic" allows one movie, "Rental Plus" allows three, "Super Access" allows five, "Ultra Plus" allows ten), and the monthly fee.
